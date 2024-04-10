@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Treblle\Middlewares\TreblleMiddleware;
 
-Route::get('/user', static fn (Request $request) => $request->user())->middleware('auth:sanctum');
+Route::middleware(TreblleMiddleware::class)->group(static function (): void {
+    Route::prefix('v1')->as('api:v1:')->group(
+        base_path('routes/api/v1/routes.php'),
+    );
+});
