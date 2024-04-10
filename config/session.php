@@ -190,7 +190,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option determines how your cookies behave when cross-site requests
-    | take place, and can be used to mitigate CSRF attacks. By default, we
+    | take place, and can be used to mitigate CSRF attacks. By default, web
     | will set this value to "lax" to permit secure cross-site requests.
     |
     | See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value

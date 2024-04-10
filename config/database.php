@@ -117,7 +117,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This table keeps track of all the migrations that have already run for
-    | your application. Using this information, we can determine which of
+    | your application. Using this information, web can determine which of
     | the migrations on disk haven't actually been run on the database.
     |
     */
